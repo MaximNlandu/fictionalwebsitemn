@@ -1,3 +1,5 @@
+import React from 'react'
+import ReactDom from 'react-dom'
 import "../css/style.css"
 
 // Our modules / classes
@@ -15,6 +17,18 @@ const heroSlider = new HeroSlider()
 const search = new Search ()
 const mynotes = new MyNotes()
 const like = new Like()
+// Our React Code
+
+function OurFirstComponent() {
+  return(
+    <div>
+      <h1>Hello world!</h1>
+      <p>The sky is blue, and grass is green.</p>
+    </div>
+  );
+}
+
+ReactDom.render(<OurFirstComponent />, document.querySelector("#app"))
 
 // Allow new JS and CSS to load in browser without a traditional page refresh
 if (module.hot) {

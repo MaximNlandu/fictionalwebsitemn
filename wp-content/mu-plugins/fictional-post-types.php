@@ -103,7 +103,20 @@ register_post_type('like', array(
     )
 ));
 
-
+// Slideshow post type
+register_post_type('slideshow', array(
+    'show_in_rest' => true,
+    'supports' => array('title'),
+    'public' => true,
+    'menu_icon' => 'dashicons-embed-photo',
+    'labels' => array(
+        'name' => 'Slideshow',
+        'add_new_item' => 'Add New Slideshow',
+        'edit_item' => 'Edit Slideshow',
+        'all_items' => 'All Slideshows',
+        'singular_name' => 'Slideshow'
+    )
+));
 
 
 }

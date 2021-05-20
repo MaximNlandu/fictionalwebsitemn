@@ -1,4 +1,3 @@
-<hr class="section-break">
 <div class="event-summary">
             <a class="event-summary__date t-center" href="#">
               <span class="event-summary__month"><?php 
@@ -16,3 +15,4 @@
               }?><a href="<?php the_permalink();?>" class="nu gray">Learn more</a></p>
             </div>
           </div>
+          <hr class="section-break">
